@@ -1,0 +1,54 @@
+-- Standard Schema for Team
+CREATE SCHEMA IF NOT EXISTS USER_DB_COBRA.RAW;
+CREATE SCHEMA IF NOT EXISTS USER_DB_COBRA.ANALYTICS;
+CREATE SCHEMA IF NOT EXISTS USER_DB_COBRA.DASHBOARD;
+
+-- Temporary landing zone for the raw TABLES
+CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.NETFLIX_STAGING_ZONE (
+    show_id STRING,
+    type STRING,
+    title STRING,
+    date_added STRING,
+    release_year INT,
+    rating STRING,
+    duration STRING,
+    listed_in STRING, -- The messy comma version
+    country STRING
+);
+
+-- Create RAW table for Netflix titles
+CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.NETFLIX_TITLES (
+    show_id STRING,
+    type STRING,      -- Used to filer 'Movie' later
+    title STRING,
+    date_added STRING,
+    release_year INT,
+    rating STRING,
+    duration STRING,
+    listed_in STRING, -- comma-separated Genres
+    country STRING
+);
+
+-- Create RAW table for TMDb Trending
+CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.TMDB_TRENDING (
+    tmdb_id INT,
+    title STRING,
+    release_date DATE,
+    popularity FLOAT,
+    vote_average FLOAT,
+    vote_count INT,
+    genre_ids ARRAY, 
+    original_language STRING,
+    snapshot_timestamp TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- Create RAW table for TMDb Genres
+CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.TMDB_GENRES (
+    genre_id INT,
+    genre_name STRING
+);
+
+-- This allows anyone in the account to see and use your database 
+GRANT USAGE ON DATABASE USER_DB_COBRA TO ROLE PUBLIC;
+GRANT USAGE ON ALL SCHEMAS IN DATABASE USER_DB_COBRA TO ROLE PUBLIC;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA USER_DB_COBRA.RAW TO ROLE PUBLIC;

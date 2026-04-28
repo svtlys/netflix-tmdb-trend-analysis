@@ -29,9 +29,9 @@ SELECT
     date_added, 
     release_year, 
     rating, 
-    -- This removes ' min', trims spaces, and handles the data as a string for now
-    -- (Or you can cast to INT if you change your table definition)
-    TRIM(REPLACE(duration, ' min', '')) as duration_cleaned,
+    -- 1. Remove ' min'
+    -- 2. Cast as INT
+    CAST(REPLACE(duration, ' min', '') AS INT), 
     TRIM(f_genre.value::string),   
     TRIM(f_country.value::string) 
 FROM USER_DB_COBRA.RAW.NETFLIX_STAGING_ZONE,

@@ -24,7 +24,7 @@ CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.NETFLIX_TITLES (
     date_added STRING,
     release_year INT,
     rating STRING,
-    duration STRING,
+    duration INT,
     listed_in STRING, -- comma-separated Genres
     country STRING
 );

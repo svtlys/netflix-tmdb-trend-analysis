@@ -19,7 +19,7 @@ CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.NETFLIX_STAGING_ZONE (
 -- Create RAW table for Netflix titles
 CREATE OR REPLACE TABLE USER_DB_COBRA.RAW.NETFLIX_TITLES (
     show_id STRING,
-    type STRING,      -- Used to filer 'Movie' later
+    type STRING,      -- Used to filter 'Movie' later
     title STRING,
     date_added STRING,
     release_year INT,

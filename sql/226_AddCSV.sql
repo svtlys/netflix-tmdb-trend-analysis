@@ -1,6 +1,7 @@
 USE USER_DB_COBRA;
 USE SCHEMA RAW;
-
+-- Create stage (if not exists)
+create stage if not exists USER_DB_COBRA.RAW.NETFLIX_STAGE;
 -- Messy genre version for temporary table
 COPY INTO USER_DB_COBRA.RAW.NETFLIX_STAGING_ZONE
 FROM (

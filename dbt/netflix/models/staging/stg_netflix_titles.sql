@@ -1,31 +1,46 @@
 with source as (
 
-    select * 
+    select *
     from raw.netflix_titles
 
 ),
 
-cleaned as (
+with cleaned as (
 
     select
-        trim(show_id) as show_id,
-        trim(type) as content_type,
-        trim(title) as title,
+        nullif(trim(show_id), '') as show_id,
+        trim(type) as type,
+        nullif(trim(title), '') as title,
+        try_to_date(nullif(trim(date_added), ''), 'MMMM DD, YYYY') as date_added,
+        try_cast(release_year as int) as release_year,
+        nullif(trim(rating), '') as rating,
+        nullif(trim(duration), '') as duration,
+        nullif(trim(listed_in), '') as listed_in,
+        nullif(trim(country), '') as country
+    from USER_DB_GECKO.RAW.NETFLIX_TITLES
 
-        try_to_date(date_added, 'MMMM DD, YYYY') as date_added,
-        release_year::int as release_year,
+),
 
-        trim(rating) as rating,
-        duration::int as duration_minutes,
+transformed as (
 
-        trim(listed_in) as genre,
-        trim(country) as country,
-
-        current_timestamp() as loaded_at
-
-    from source
+    select
+        show_id,
+        type,
+        title,
+        date_added,
+        release_year,
+        rating,
+        cast(replace(duration, ' min', '') as int) as duration,
+        trim(f_genre.value::string) as listed_in,
+        trim(f_country.value::string) as country
+    from cleaned,
+    lateral flatten(input => split(listed_in, ',')) f_genre,
+    lateral flatten(input => split(ifnull(country, 'Unknown'), ',')) f_country
+    where type = 'Movie'
 
 )
 
 select *
-from cleaned
+from transformed
+where show_id is not null
+and title is not null

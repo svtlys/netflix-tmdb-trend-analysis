@@ -24,16 +24,21 @@ def extract_tmdb_data():
         "vote_average"
     ]]
 
+    #timestamp for time-series tracking
     df["snapshot_timestamp"] = datetime.now()
 
+    print("Preview of TMDb data:")
+    print(df.head())
+
+    # temporary storage (for now)
     df.to_csv("/tmp/tmdb_data.csv", index=False)
 
-    print("Data extracted and saved!")
+    print("TMDb realtime ingestion complete!")
 
 with DAG(
-    dag_id="tmdb_pipeline",
+    dag_id="tmdb_realtime_ingest",
     start_date=datetime(2024, 1, 1),
-    schedule_interval="@daily",
+    schedule_interval="@daily",   # simulate real-time
     catchup=False
 ) as dag:
 

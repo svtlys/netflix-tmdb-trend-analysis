@@ -6,7 +6,7 @@ import requests
 import pandas as pd
 import snowflake.connector
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
-
+from airflow.hooks.base import BaseHook
 
 def extract_tmdb_data():
     API_KEY = Variable.get("tmdb_api_key")
@@ -29,7 +29,8 @@ def extract_tmdb_data():
         "vote_average",
         "vote_count",
         "genre_ids",
-        "original_language"
+        "original_language", 
+        "snapshot_timestamp"
     ]]
     
     print("Preview of TMDb data:")
@@ -45,31 +46,51 @@ def load_tmdb():
     conn = hook.get_conn()
     cur = conn.cursor()
 
-    # set context
-    cur.execute("USE DATABASE USER_DB_GECKO")
-    cur.execute("USE SCHEMA RAW")
+    airflow_conn = BaseHook.get_connection("conn")
+    extra = airflow_conn.extra_dejson
 
-    # upload file to stage
-    cur.execute("""
-        PUT file:///tmp/tmdb_data.csv
-        @USER_DB_GECKO.RAW.TMDB_STAGE
-        AUTO_COMPRESS=TRUE
-        OVERWRITE=TRUE;
-    """)
+    warehouse = extra.get("warehouse")
+    database = extra.get("database")
+    schema = extra.get("schema") or airflow_conn.schema
 
-    # load into table (no mapping needed if columns reordered)
-    cur.execute("""
-        COPY INTO USER_DB_GECKO.RAW.TMDB_TRENDING
-        FILE_FORMAT = (
-            TYPE = 'CSV'
-            SKIP_HEADER = 1
-            FIELD_OPTIONALLY_ENCLOSED_BY = '"'
-        )
-        FORCE = TRUE;
-    """)
+    try:
+        if warehouse:
+            cur.execute(f"USE WAREHOUSE {warehouse}")
+        if database:
+            cur.execute(f"USE DATABASE {database}")
+        if schema:
+            cur.execute(f"USE SCHEMA {schema}")
 
-    cur.close()
-    conn.close()
+        cur.execute("""
+            CREATE STAGE IF NOT EXISTS TMDB_STAGE
+            FILE_FORMAT = (
+                TYPE = 'CSV'
+                SKIP_HEADER = 1
+                FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+            );
+        """)
+
+        cur.execute("""
+            PUT file:///tmp/tmdb_data.csv
+            @TMDB_STAGE
+            AUTO_COMPRESS=TRUE
+            OVERWRITE=TRUE;
+        """)
+
+        cur.execute("""
+            COPY INTO TMDB_TRENDING
+            FROM @TMDB_STAGE
+            FILE_FORMAT = (
+                TYPE = 'CSV'
+                SKIP_HEADER = 1
+                FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+            )
+            FORCE = TRUE;
+        """)
+
+    finally:
+        cur.close()
+        conn.close()
 
 with DAG(
     dag_id="tmdb_realtime_ingest",

@@ -170,9 +170,9 @@ def run_dbt():
     )
 with DAG(
     dag_id="tmdb_realtime_ingest",
-    start_date=datetime(2024, 1, 1),
+    start_date=datetime(2026, 4, 1),
     schedule_interval="@daily",   # simulate real-time
-    catchup=False
+    catchup=True
 ) as dag:
 
     extract_task = PythonOperator(

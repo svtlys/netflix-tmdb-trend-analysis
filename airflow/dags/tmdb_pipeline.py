@@ -6,7 +6,8 @@ import requests
 import pandas as pd
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 from airflow.hooks.base import BaseHook
-
+import os
+import subprocess
 def extract_tmdb_data():
     API_KEY = Variable.get("tmdb_api_key")
 
@@ -154,7 +155,19 @@ def load_tmdb_genres():
     finally:
         cur.close()
         conn.close()
+import os
+import subprocess
 
+def run_dbt():
+    env = os.environ.copy()
+    env["DBT_PROFILES_DIR"] = "/opt/airflow/dbt/netflix"
+
+    subprocess.run(
+        ["dbt", "run"],
+        cwd="/opt/airflow/dbt/netflix",
+        env=env,
+        check=True
+    )
 with DAG(
     dag_id="tmdb_realtime_ingest",
     start_date=datetime(2024, 1, 1),
@@ -180,6 +193,11 @@ with DAG(
         task_id="load_tmdb_genres",
         python_callable=load_tmdb_genres
     )
+    dbt_task = PythonOperator(
+    task_id="run_dbt",
+    python_callable=run_dbt
+    )
 
     extract_task >> load_task
     extract_genres_task >> load_genres_task
+    [load_task, load_genres_task] >> dbt_task

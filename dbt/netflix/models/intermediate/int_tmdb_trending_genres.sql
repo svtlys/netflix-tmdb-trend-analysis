@@ -18,7 +18,7 @@ flattened as (
         snapshot_timestamp,
         f.value::int as genre_id
     from trending,
-    lateral flatten(input => parse_json(genre_ids)) f
+    lateral flatten(input => genre_ids) f
 
 ),
 

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: USER_DB_GECKO
+    schema: RAW
+    tables:
+      - name: netflix_titles
+      - name: tmdb_trending
+      - name: tmdb_genres

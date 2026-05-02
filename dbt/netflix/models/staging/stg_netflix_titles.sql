@@ -1,11 +1,11 @@
 with source as (
 
     select *
-    from raw.netflix_titles
+    from {{ source('raw', 'netflix_titles') }}
 
 ),
 
-with cleaned as (
+cleaned as (
 
     select
         nullif(trim(show_id), '') as show_id,
@@ -17,7 +17,7 @@ with cleaned as (
         nullif(trim(duration), '') as duration,
         nullif(trim(listed_in), '') as listed_in,
         nullif(trim(country), '') as country
-    from USER_DB_GECKO.RAW.NETFLIX_TITLES
+    from source
 
 ),
 
@@ -43,4 +43,4 @@ transformed as (
 select *
 from transformed
 where show_id is not null
-and title is not null
+  and title is not null

@@ -1,0 +1,29 @@
+[2026-05-02T17:55:34.333+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-02T17:55:34.340+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb manual__2026-05-02T17:55:32.061917+00:00 [queued]>
+[2026-05-02T17:55:34.343+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb manual__2026-05-02T17:55:32.061917+00:00 [queued]>
+[2026-05-02T17:55:34.343+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-02T17:55:34.349+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb> on 2026-05-02 17:55:32.061917+00:00
+[2026-05-02T17:55:34.352+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=245) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-02T17:55:34.353+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb', 'manual__2026-05-02T17:55:32.061917+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpu0gc4uxa']
+[2026-05-02T17:55:34.355+0000] {standard_task_runner.py:72} INFO - Started process 251 to run task
+[2026-05-02T17:55:34.355+0000] {standard_task_runner.py:105} INFO - Job 119: Subtask load_tmdb
+[2026-05-02T17:55:34.369+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb manual__2026-05-02T17:55:32.061917+00:00 [running]> on host a572647a7d94
+[2026-05-02T17:55:34.394+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb' AIRFLOW_CTX_EXECUTION_DATE='2026-05-02T17:55:32.061917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-02T17:55:32.061917+00:00'
+[2026-05-02T17:55:34.395+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-02T17:55:34.404+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-02T17:55:34.404+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.1, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-02T17:55:34.405+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-02T17:55:34.405+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-02T17:55:35.531+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-02T17:55:35.722+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-02T17:55:35.971+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-02T17:55:36.106+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-02T17:55:36.402+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-02T17:55:38.678+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-02T17:55:38.679+0000] {connection.py:788} INFO - closed
+[2026-05-02T17:55:38.748+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-02T17:55:38.845+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-02T17:55:38.863+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-02T17:55:38.866+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb, run_id=manual__2026-05-02T17:55:32.061917+00:00, execution_date=20260502T175532, start_date=20260502T175534, end_date=20260502T175538
+[2026-05-02T17:55:38.928+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-02T17:55:38.935+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

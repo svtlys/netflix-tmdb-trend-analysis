@@ -1,0 +1,30 @@
+[2026-05-01T18:23:54.943+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-01T18:23:54.947+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb manual__2026-05-01T18:23:52.863881+00:00 [queued]>
+[2026-05-01T18:23:54.949+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb manual__2026-05-01T18:23:52.863881+00:00 [queued]>
+[2026-05-01T18:23:54.949+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-01T18:23:54.953+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb> on 2026-05-01 18:23:52.863881+00:00
+[2026-05-01T18:23:54.956+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=220) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-01T18:23:54.956+0000] {standard_task_runner.py:72} INFO - Started process 223 to run task
+[2026-05-01T18:23:54.956+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb', 'manual__2026-05-01T18:23:52.863881+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpyorieyx5']
+[2026-05-01T18:23:54.957+0000] {standard_task_runner.py:105} INFO - Job 84: Subtask load_tmdb
+[2026-05-01T18:23:54.970+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb manual__2026-05-01T18:23:52.863881+00:00 [running]> on host d85a01143666
+[2026-05-01T18:23:54.992+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T18:23:52.863881+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-01T18:23:52.863881+00:00'
+[2026-05-01T18:23:54.992+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-01T18:23:55.001+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-01T18:23:55.001+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.1, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-01T18:23:55.002+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-01T18:23:55.002+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-01T18:23:56.296+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-01T18:23:56.462+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-01T18:23:56.686+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-01T18:23:56.851+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-01T18:23:57.076+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-01T18:24:00.639+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-01T18:24:00.640+0000] {connection.py:788} INFO - closed
+[2026-05-01T18:24:00.709+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-01T18:24:00.794+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-01T18:24:00.805+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-01T18:24:00.806+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb, run_id=manual__2026-05-01T18:23:52.863881+00:00, execution_date=20260501T182352, start_date=20260501T182354, end_date=20260501T182400
+[2026-05-01T18:24:00.831+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-01T18:24:00.842+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-01T18:24:00.843+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

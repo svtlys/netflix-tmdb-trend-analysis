@@ -6,7 +6,8 @@ import requests
 import pandas as pd
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 from airflow.hooks.base import BaseHook
-
+import os
+import subprocess
 def extract_tmdb_data():
     API_KEY = Variable.get("tmdb_api_key")
 
@@ -154,12 +155,67 @@ def load_tmdb_genres():
     finally:
         cur.close()
         conn.close()
+import os
+import subprocess
 
+def run_dbt():
+    env = os.environ.copy()
+    env["DBT_PROFILES_DIR"] = "/opt/airflow/dbt/netflix"
+
+    subprocess.run(
+        ["dbt", "run"],
+        cwd="/opt/airflow/dbt/netflix",
+        env=env,
+        check=True
+    )
+
+def create_dashboard_views():
+    hook = SnowflakeHook(snowflake_conn_id="conn")
+    conn = hook.get_conn()
+    cur = conn.cursor()
+
+    airflow_conn = BaseHook.get_connection("conn")
+    extra = airflow_conn.extra_dejson
+
+    warehouse = extra.get("warehouse")
+    database = extra.get("database")
+    raw_schema = extra.get("schema") or airflow_conn.schema
+
+    analytics_schema = "ANALYTICS"
+    dashboard_schema = "DASHBOARD"
+
+    try:
+        if warehouse:
+            cur.execute(f"USE WAREHOUSE {warehouse}")
+        if database:
+            cur.execute(f"USE DATABASE {database}")
+
+        cur.execute(f"CREATE SCHEMA IF NOT EXISTS {dashboard_schema}")
+
+        views = {
+            "NETFLIX_CATALOG": "FACT_NETFLIX_CATALOG",
+            "TMDB_TRENDING_SNAPSHOT": "FACT_TMDB_TRENDING_SNAPSHOT",
+            "GENRE_GAP_ANALYSIS": "MART_GENRE_GAP_ANALYSIS",
+            "KPIS_DAILY": "MART_KPIS_DAILY",
+            "DIM_GENRE": "DIM_GENRE",
+            "DIM_TITLE": "DIM_TITLE"
+        }
+
+        for view_name, model_name in views.items():
+            cur.execute(f"""
+                CREATE OR REPLACE VIEW {dashboard_schema}.{view_name} AS
+                SELECT *
+                FROM {analytics_schema}.{model_name}
+            """)
+
+    finally:
+        cur.close()
+        conn.close()
 with DAG(
     dag_id="tmdb_realtime_ingest",
-    start_date=datetime(2024, 1, 1),
+    start_date=datetime(2026, 4, 1),
     schedule_interval="@daily",   # simulate real-time
-    catchup=False
+    catchup=True
 ) as dag:
 
     extract_task = PythonOperator(
@@ -180,6 +236,16 @@ with DAG(
         task_id="load_tmdb_genres",
         python_callable=load_tmdb_genres
     )
+    dbt_task = PythonOperator(
+    task_id="run_dbt",
+    python_callable=run_dbt
+    )
+    dashboard_views_task = PythonOperator(
+    task_id="create_dashboard_views",
+    python_callable=create_dashboard_views
+)
 
     extract_task >> load_task
     extract_genres_task >> load_genres_task
+    [load_task, load_genres_task] >> dbt_task
+    dbt_task >> dashboard_views_task

@@ -1,0 +1,28 @@
+[2026-05-02T22:13:22.049+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-02T22:13:22.059+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_data manual__2026-05-02T22:13:21.113834+00:00 [queued]>
+[2026-05-02T22:13:22.065+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_data manual__2026-05-02T22:13:21.113834+00:00 [queued]>
+[2026-05-02T22:13:22.065+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-02T22:13:22.072+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_data> on 2026-05-02 22:13:21.113834+00:00
+[2026-05-02T22:13:22.079+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_data', 'manual__2026-05-02T22:13:21.113834+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmphrr3hctq']
+[2026-05-02T22:13:22.080+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=293) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-02T22:13:22.081+0000] {standard_task_runner.py:105} INFO - Job 142: Subtask extract_tmdb_data
+[2026-05-02T22:13:22.081+0000] {standard_task_runner.py:72} INFO - Started process 300 to run task
+[2026-05-02T22:13:22.105+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_data manual__2026-05-02T22:13:21.113834+00:00 [running]> on host 2ad98282563b
+[2026-05-02T22:13:22.138+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_data' AIRFLOW_CTX_EXECUTION_DATE='2026-05-02T22:13:21.113834+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-02T22:13:21.113834+00:00'
+[2026-05-02T22:13:22.138+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-02T22:13:22.407+0000] {logging_mixin.py:190} INFO - Preview of TMDb data:
+[2026-05-02T22:13:22.414+0000] {logging_mixin.py:190} INFO -    tmdb_id  ...         snapshot_timestamp
+0  1007757  ... 2026-05-02 22:13:22.405149
+1  1318447  ... 2026-05-02 22:13:22.405149
+2   936075  ... 2026-05-02 22:13:22.405149
+3  1314481  ... 2026-05-02 22:13:22.405149
+4  1292695  ... 2026-05-02 22:13:22.405149
+
+[5 rows x 9 columns]
+[2026-05-02T22:13:22.416+0000] {logging_mixin.py:190} INFO - TMDb realtime ingestion complete!
+[2026-05-02T22:13:22.416+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-02T22:13:22.420+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-02T22:13:22.421+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_data, run_id=manual__2026-05-02T22:13:21.113834+00:00, execution_date=20260502T221321, start_date=20260502T221322, end_date=20260502T221322
+[2026-05-02T22:13:22.430+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-02T22:13:22.446+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-02T22:13:22.447+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

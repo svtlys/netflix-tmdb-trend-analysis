@@ -1,0 +1,26 @@
+[2026-05-04T23:35:28.700+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-04T23:35:28.708+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb scheduled__2026-05-02T00:00:00+00:00 [queued]>
+[2026-05-04T23:35:28.714+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb scheduled__2026-05-02T00:00:00+00:00 [queued]>
+[2026-05-04T23:35:28.715+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-04T23:35:28.724+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb> on 2026-05-02 00:00:00+00:00
+[2026-05-04T23:35:28.730+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=236) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-04T23:35:28.731+0000] {standard_task_runner.py:72} INFO - Started process 253 to run task
+[2026-05-04T23:35:28.730+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb', 'scheduled__2026-05-02T00:00:00+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpj_mqqbdk']
+[2026-05-04T23:35:28.732+0000] {standard_task_runner.py:105} INFO - Job 166: Subtask load_tmdb
+[2026-05-04T23:35:28.767+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb scheduled__2026-05-02T00:00:00+00:00 [running]> on host 6a67170d577a
+[2026-05-04T23:35:28.812+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb' AIRFLOW_CTX_EXECUTION_DATE='2026-05-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-02T00:00:00+00:00'
+[2026-05-04T23:35:28.813+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-04T23:35:28.827+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-04T23:35:28.829+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-04T23:35:28.829+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-04T23:35:28.829+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-04T23:35:31.058+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-04T23:35:31.279+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-04T23:35:31.483+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-04T23:35:31.645+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-04T23:35:32.492+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-04T23:35:34.062+0000] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses
+[2026-05-04T23:35:34.067+0000] {process_utils.py:132} INFO - Sending 15 to group 253. PIDs of all processes in the group: [253]
+[2026-05-04T23:35:34.070+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 253
+[2026-05-04T23:35:34.072+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-05-04T23:35:34.074+0000] {connection.py:788} INFO - closed

@@ -1,0 +1,42 @@
+[2026-05-04T23:35:26.833+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:35:26.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_pipeline.py for tasks to queue
+[2026-05-04T23:35:26.841+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:35:26.841+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:35:26.860+0000] {processor.py:925} INFO - DAG(s) 'tmdb_realtime_ingest' retrieved from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:35:26.992+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:35:26.992+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2026-05-04T23:35:27.013+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:35:27.013+0000] {dag.py:4156} INFO - Setting next_dagrun for tmdb_realtime_ingest to 2026-05-04 00:00:00+00:00, run_after=2026-05-05 00:00:00+00:00
+[2026-05-04T23:35:27.031+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_pipeline.py took 0.204 seconds
+[2026-05-04T23:36:07.561+0000] {processor.py:186} INFO - Started process (PID=260) to work on /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:36:07.562+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_pipeline.py for tasks to queue
+[2026-05-04T23:36:07.564+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:36:07.564+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:36:07.577+0000] {processor.py:925} INFO - DAG(s) 'tmdb_realtime_ingest' retrieved from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:36:07.606+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:36:07.605+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2026-05-04T23:36:07.622+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:36:07.622+0000] {dag.py:4156} INFO - Setting next_dagrun for tmdb_realtime_ingest to 2026-05-04 00:00:00+00:00, run_after=2026-05-05 00:00:00+00:00
+[2026-05-04T23:36:07.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_pipeline.py took 0.078 seconds
+[2026-05-04T23:36:37.837+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:36:37.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_pipeline.py for tasks to queue
+[2026-05-04T23:36:37.840+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:36:37.840+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:36:37.853+0000] {processor.py:925} INFO - DAG(s) 'tmdb_realtime_ingest' retrieved from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:36:37.872+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:36:37.872+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2026-05-04T23:36:37.890+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:36:37.890+0000] {dag.py:4156} INFO - Setting next_dagrun for tmdb_realtime_ingest to 2026-05-04 00:00:00+00:00, run_after=2026-05-05 00:00:00+00:00
+[2026-05-04T23:36:37.902+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_pipeline.py took 0.070 seconds
+[2026-05-04T23:37:08.158+0000] {processor.py:186} INFO - Started process (PID=392) to work on /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:37:08.159+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_pipeline.py for tasks to queue
+[2026-05-04T23:37:08.162+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:37:08.161+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:37:08.171+0000] {processor.py:925} INFO - DAG(s) 'tmdb_realtime_ingest' retrieved from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:37:08.190+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:37:08.189+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2026-05-04T23:37:08.201+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:37:08.201+0000] {dag.py:4156} INFO - Setting next_dagrun for tmdb_realtime_ingest to 2026-05-04 00:00:00+00:00, run_after=2026-05-05 00:00:00+00:00
+[2026-05-04T23:37:08.208+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_pipeline.py took 0.055 seconds
+[2026-05-04T23:37:38.488+0000] {processor.py:186} INFO - Started process (PID=413) to work on /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:37:38.489+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_pipeline.py for tasks to queue
+[2026-05-04T23:37:38.491+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:37:38.491+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:37:38.504+0000] {processor.py:925} INFO - DAG(s) 'tmdb_realtime_ingest' retrieved from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:37:38.522+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:37:38.522+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2026-05-04T23:37:38.535+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:37:38.535+0000] {dag.py:4156} INFO - Setting next_dagrun for tmdb_realtime_ingest to 2026-05-04 00:00:00+00:00, run_after=2026-05-05 00:00:00+00:00
+[2026-05-04T23:37:38.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_pipeline.py took 0.062 seconds
+[2026-05-04T23:38:08.917+0000] {processor.py:186} INFO - Started process (PID=429) to work on /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:38:08.919+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tmdb_pipeline.py for tasks to queue
+[2026-05-04T23:38:08.925+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:38:08.924+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:38:08.947+0000] {processor.py:925} INFO - DAG(s) 'tmdb_realtime_ingest' retrieved from /opt/airflow/dags/tmdb_pipeline.py
+[2026-05-04T23:38:08.985+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:38:08.985+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2026-05-04T23:38:09.008+0000] {logging_mixin.py:190} INFO - [2026-05-04T23:38:09.008+0000] {dag.py:4156} INFO - Setting next_dagrun for tmdb_realtime_ingest to 2026-05-04 00:00:00+00:00, run_after=2026-05-05 00:00:00+00:00
+[2026-05-04T23:38:09.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tmdb_pipeline.py took 0.123 seconds

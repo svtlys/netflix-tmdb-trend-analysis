@@ -211,9 +211,55 @@ def create_dashboard_views():
     finally:
         cur.close()
         conn.close()
+
+def populate_final_dashboard_table():
+    hook = SnowflakeHook(snowflake_conn_id="conn")
+    conn = hook.get_conn()
+    cur = conn.cursor()
+
+    airflow_conn = BaseHook.get_connection("conn")
+    extra = airflow_conn.extra_dejson
+
+    warehouse = extra.get("warehouse")
+    database = extra.get("database")
+
+    try:
+        if warehouse:
+            cur.execute(f"USE WAREHOUSE {warehouse}")
+        if database:
+            cur.execute(f"USE DATABASE {database}")
+
+        cur.execute("""
+            CREATE OR REPLACE TABLE DASHBOARD.FINAL_DASHBOARD_SUMMARY AS
+            SELECT
+                k.SNAPSHOT_DATE,
+                k.AVG_POPULARITY,
+                k.AVG_VOTE_AVERAGE,
+                k.TOP_GENRE,
+                k.TOP_GENRE_COUNT,
+                k.TRENDING_TITLE_COUNT,
+
+                g.GENRE_NAME,
+                g.NETFLIX_COUNT,
+                g.TRENDING_COUNT,
+                g.NETFLIX_SHARE,
+                g.TRENDING_SHARE,
+                g.SHARE_GAP,
+
+                CURRENT_TIMESTAMP() AS LOADED_AT
+            FROM DASHBOARD.KPIS_DAILY k
+            JOIN DASHBOARD.GENRE_GAP_ANALYSIS g
+                ON k.TOP_GENRE = g.GENRE_NAME
+        """)
+
+        print("Created DASHBOARD.FINAL_DASHBOARD_SUMMARY")
+
+    finally:
+        cur.close()
+        conn.close()
 with DAG(
     dag_id="tmdb_realtime_ingest",
-    start_date=datetime(2026, 4, 1),
+    start_date=datetime(2026, 3, 20),
     schedule_interval="@daily",   # simulate real-time
     catchup=True
 ) as dag:
@@ -244,8 +290,12 @@ with DAG(
     task_id="create_dashboard_views",
     python_callable=create_dashboard_views
 )
+    final_table_task = PythonOperator(
+    task_id="populate_final_dashboard_table",
+    python_callable=populate_final_dashboard_table
+)
 
     extract_task >> load_task
     extract_genres_task >> load_genres_task
     [load_task, load_genres_task] >> dbt_task
-    dbt_task >> dashboard_views_task
+    dbt_task >> dashboard_views_task >> final_table_task

@@ -8,7 +8,8 @@ from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 from airflow.hooks.base import BaseHook
 import os
 import subprocess
-def extract_tmdb_data():
+#def extract_tmdb_data():
+def extract_tmdb_data(**context):
     API_KEY = Variable.get("tmdb_api_key")
 
     url = f"https://api.themoviedb.org/3/trending/movie/day?api_key={API_KEY}"
@@ -19,7 +20,8 @@ def extract_tmdb_data():
 
     df = pd.DataFrame(movies)
     #timestamp for time-series tracking
-    df["snapshot_timestamp"] = datetime.now()
+    #df["snapshot_timestamp"] = datetime.now()            # '2026-03-20'
+    df["snapshot_timestamp"] = context["logical_date"]  # full timestamp
     df = df.rename(columns={"id": "tmdb_id"})
     df = df[[
         "tmdb_id",

@@ -103,3 +103,195 @@ subprocess.CalledProcessError: Command '['python', '-m', 'dbt', 'run']' returned
 [2026-05-02T18:55:01.721+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
 [2026-05-02T18:55:01.731+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-05-02T18:55:01.732+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:21:21.760+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:21:21.779+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T07:21:21.795+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T07:21:21.797+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:21:21.817+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_dbt> on 2026-05-01 00:00:00+00:00
+[2026-05-07T07:21:21.842+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'run_dbt', 'scheduled__2026-05-01T00:00:00+00:00', '--job-id', '504', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp265sq16r']
+[2026-05-07T07:21:21.850+0000] {standard_task_runner.py:105} INFO - Job 504: Subtask run_dbt
+[2026-05-07T07:21:21.853+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2708) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:21:21.863+0000] {standard_task_runner.py:72} INFO - Started process 2740 to run task
+[2026-05-07T07:21:22.020+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [running]> on host 1589e571b783
+[2026-05-07T07:21:22.189+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-01T00:00:00+00:00'
+[2026-05-07T07:21:22.192+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:21:48.927+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:21:48.982+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:21:48.983+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=run_dbt, run_id=scheduled__2026-05-01T00:00:00+00:00, execution_date=20260501T000000, start_date=20260507T072121, end_date=20260507T072148
+[2026-05-07T07:21:49.023+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:21:49.071+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T07:21:49.076+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:35:45.348+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:35:45.388+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T07:35:45.413+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T07:35:45.414+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:35:45.433+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_dbt> on 2026-05-01 00:00:00+00:00
+[2026-05-07T07:35:45.499+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2703) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:35:45.503+0000] {standard_task_runner.py:72} INFO - Started process 2791 to run task
+[2026-05-07T07:35:45.500+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'run_dbt', 'scheduled__2026-05-01T00:00:00+00:00', '--job-id', '850', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpjra9hfrn']
+[2026-05-07T07:35:45.516+0000] {standard_task_runner.py:105} INFO - Job 850: Subtask run_dbt
+[2026-05-07T07:35:45.670+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [running]> on host da59d52ee0b5
+[2026-05-07T07:35:45.783+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-01T00:00:00+00:00'
+[2026-05-07T07:35:45.785+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:36:08.994+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:36:09.075+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:36:09.077+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=run_dbt, run_id=scheduled__2026-05-01T00:00:00+00:00, execution_date=20260501T000000, start_date=20260507T073545, end_date=20260507T073609
+[2026-05-07T07:36:09.160+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:36:09.226+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:45:00.066+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:45:00.127+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T07:45:00.166+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T07:45:00.166+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:45:00.211+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_dbt> on 2026-05-01 00:00:00+00:00
+[2026-05-07T07:45:00.270+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5853) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:45:00.275+0000] {standard_task_runner.py:72} INFO - Started process 5951 to run task
+[2026-05-07T07:45:00.271+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'run_dbt', 'scheduled__2026-05-01T00:00:00+00:00', '--job-id', '1191', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpuw6aqthc']
+[2026-05-07T07:45:00.284+0000] {standard_task_runner.py:105} INFO - Job 1191: Subtask run_dbt
+[2026-05-07T07:45:00.477+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [running]> on host da59d52ee0b5
+[2026-05-07T07:45:00.651+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-01T00:00:00+00:00'
+[2026-05-07T07:45:00.662+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:45:30.084+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:45:30.110+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:45:30.111+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=run_dbt, run_id=scheduled__2026-05-01T00:00:00+00:00, execution_date=20260501T000000, start_date=20260507T074500, end_date=20260507T074530
+[2026-05-07T07:45:30.164+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:45:30.186+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:00:21.276+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:00:21.289+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T08:00:21.294+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T08:00:21.295+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:00:21.301+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_dbt> on 2026-05-01 00:00:00+00:00
+[2026-05-07T08:00:21.308+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3385) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:00:21.310+0000] {standard_task_runner.py:72} INFO - Started process 3393 to run task
+[2026-05-07T08:00:21.308+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'run_dbt', 'scheduled__2026-05-01T00:00:00+00:00', '--job-id', '1668', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpb3stgwat']
+[2026-05-07T08:00:21.311+0000] {standard_task_runner.py:105} INFO - Job 1668: Subtask run_dbt
+[2026-05-07T08:00:21.347+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [running]> on host aec0b0090a27
+[2026-05-07T08:00:21.389+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-01T00:00:00+00:00'
+[2026-05-07T08:00:21.390+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:00:57.579+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:00:57.607+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:00:57.608+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=run_dbt, run_id=scheduled__2026-05-01T00:00:00+00:00, execution_date=20260501T000000, start_date=20260507T080021, end_date=20260507T080057
+[2026-05-07T08:00:57.666+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:00:57.682+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:00:57.683+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:10:03.453+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:10:03.477+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T08:10:03.488+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T08:10:03.491+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:10:03.509+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_dbt> on 2026-05-01 00:00:00+00:00
+[2026-05-07T08:10:03.522+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=800) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:10:03.526+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'run_dbt', 'scheduled__2026-05-01T00:00:00+00:00', '--job-id', '1774', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp555usbfb']
+[2026-05-07T08:10:03.528+0000] {standard_task_runner.py:72} INFO - Started process 830 to run task
+[2026-05-07T08:10:03.530+0000] {standard_task_runner.py:105} INFO - Job 1774: Subtask run_dbt
+[2026-05-07T08:10:03.738+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [running]> on host 304727ced316
+[2026-05-07T08:10:03.972+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-01T00:00:00+00:00'
+[2026-05-07T08:10:03.976+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:10:28.467+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/tmdb_pipeline.py", line 165, in run_dbt
+    subprocess.run(
+  File "/usr/local/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['dbt', 'run']' returned non-zero exit status 1.
+[2026-05-07T08:10:28.488+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tmdb_realtime_ingest, task_id=run_dbt, run_id=scheduled__2026-05-01T00:00:00+00:00, execution_date=20260501T000000, start_date=20260507T081003, end_date=20260507T081028
+[2026-05-07T08:10:28.506+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:10:28.507+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 1774 for task run_dbt (Command '['dbt', 'run']' returned non-zero exit status 1.; 830)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/tmdb_pipeline.py", line 165, in run_dbt
+    subprocess.run(
+  File "/usr/local/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['dbt', 'run']' returned non-zero exit status 1.
+[2026-05-07T08:10:28.528+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-05-07T08:10:28.568+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:10:28.571+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:21:47.927+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:21:47.945+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T08:21:47.968+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [queued]>
+[2026-05-07T08:21:47.969+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:21:48.001+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_dbt> on 2026-05-01 00:00:00+00:00
+[2026-05-07T08:21:48.020+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=827) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:21:48.023+0000] {standard_task_runner.py:72} INFO - Started process 847 to run task
+[2026-05-07T08:21:48.027+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'run_dbt', 'scheduled__2026-05-01T00:00:00+00:00', '--job-id', '1863', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp4tn2qz2r']
+[2026-05-07T08:21:48.036+0000] {standard_task_runner.py:105} INFO - Job 1863: Subtask run_dbt
+[2026-05-07T08:21:48.143+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.run_dbt scheduled__2026-05-01T00:00:00+00:00 [running]> on host 468e1946259b
+[2026-05-07T08:21:48.247+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2026-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-01T00:00:00+00:00'
+[2026-05-07T08:21:48.258+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:22:10.938+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:22:11.062+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:22:11.089+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=run_dbt, run_id=scheduled__2026-05-01T00:00:00+00:00, execution_date=20260501T000000, start_date=20260507T082147, end_date=20260507T082211
+[2026-05-07T08:22:11.283+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:22:11.350+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

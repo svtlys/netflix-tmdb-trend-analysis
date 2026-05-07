@@ -28,3 +28,183 @@
 [2026-05-01T18:34:41.497+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
 [2026-05-01T18:34:41.506+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-05-01T18:34:41.506+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:21:12.772+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:21:12.792+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:21:12.802+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:21:12.805+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:21:12.815+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T07:21:12.830+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2541) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:21:12.834+0000] {standard_task_runner.py:72} INFO - Started process 2582 to run task
+[2026-05-07T07:21:12.843+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '478', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp4z99r15h']
+[2026-05-07T07:21:12.851+0000] {standard_task_runner.py:105} INFO - Job 478: Subtask load_tmdb_genres
+[2026-05-07T07:21:12.968+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host 1589e571b783
+[2026-05-07T07:21:13.074+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T07:21:13.078+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:21:13.117+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T07:21:13.121+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-07T07:21:13.123+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-07T07:21:13.124+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-07T07:21:14.194+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T07:21:14.350+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:21:14.526+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:21:14.637+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:21:14.939+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:21:18.324+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:21:18.333+0000] {connection.py:788} INFO - closed
+[2026-05-07T07:21:18.412+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-07T07:21:18.495+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:21:18.535+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:21:18.537+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T072112, end_date=20260507T072118
+[2026-05-07T07:21:18.633+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:21:18.668+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T07:21:18.672+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:35:34.977+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:35:34.984+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:35:34.987+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:35:34.987+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:35:34.991+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T07:35:34.996+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2533) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:35:34.996+0000] {standard_task_runner.py:72} INFO - Started process 2555 to run task
+[2026-05-07T07:35:34.996+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '826', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpike4rio5']
+[2026-05-07T07:35:34.998+0000] {standard_task_runner.py:105} INFO - Job 826: Subtask load_tmdb_genres
+[2026-05-07T07:35:35.016+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host da59d52ee0b5
+[2026-05-07T07:35:35.051+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T07:35:35.051+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:35:35.063+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T07:35:35.063+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-07T07:35:35.064+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-07T07:35:35.064+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-07T07:35:35.568+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T07:35:35.785+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:35:35.983+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:35:36.280+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:35:36.472+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:35:37.863+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:35:37.864+0000] {connection.py:788} INFO - closed
+[2026-05-07T07:35:38.027+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-07T07:35:38.199+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:35:38.214+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:35:38.215+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T073534, end_date=20260507T073538
+[2026-05-07T07:35:38.244+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:35:38.281+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T07:35:38.285+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:44:49.169+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:44:49.196+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:44:49.217+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:44:49.221+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:44:49.236+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T07:44:49.247+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5656) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:44:49.250+0000] {standard_task_runner.py:72} INFO - Started process 5683 to run task
+[2026-05-07T07:44:49.249+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1171', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmplgmjm93_']
+[2026-05-07T07:44:49.252+0000] {standard_task_runner.py:105} INFO - Job 1171: Subtask load_tmdb_genres
+[2026-05-07T07:44:49.328+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host da59d52ee0b5
+[2026-05-07T07:44:49.409+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T07:44:49.412+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:44:49.429+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T07:44:49.430+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-07T07:44:49.430+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-07T07:44:49.430+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-07T07:44:50.491+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T07:44:50.680+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:44:50.886+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:44:51.147+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:44:51.476+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:44:53.750+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T07:44:53.760+0000] {connection.py:788} INFO - closed
+[2026-05-07T07:44:53.926+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-07T07:44:54.127+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:44:54.151+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:44:54.155+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T074449, end_date=20260507T074454
+[2026-05-07T07:44:54.361+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:44:54.405+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T07:44:54.413+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:00:10.974+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:00:10.994+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:00:11.006+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:00:11.006+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:00:11.032+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T08:00:11.046+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3221) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:00:11.048+0000] {standard_task_runner.py:72} INFO - Started process 3269 to run task
+[2026-05-07T08:00:11.053+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1653', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpbbg07slj']
+[2026-05-07T08:00:11.058+0000] {standard_task_runner.py:105} INFO - Job 1653: Subtask load_tmdb_genres
+[2026-05-07T08:00:11.199+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host aec0b0090a27
+[2026-05-07T08:00:11.418+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T08:00:11.426+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:00:11.494+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T08:00:11.499+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-07T08:00:11.502+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-07T08:00:11.506+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-07T08:00:12.322+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T08:00:13.016+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:00:14.036+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:00:14.170+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:00:14.324+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:00:15.949+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:00:15.950+0000] {connection.py:788} INFO - closed
+[2026-05-07T08:00:16.619+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-07T08:00:16.832+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:00:16.844+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:00:16.844+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T080010, end_date=20260507T080016
+[2026-05-07T08:00:16.865+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:00:16.889+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:00:16.889+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:09:53.632+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:09:53.745+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:09:53.859+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:09:53.861+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:09:54.638+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T08:09:54.727+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=650) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:09:54.735+0000] {standard_task_runner.py:72} INFO - Started process 690 to run task
+[2026-05-07T08:09:54.749+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1754', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpph3s3sqn']
+[2026-05-07T08:09:54.769+0000] {standard_task_runner.py:105} INFO - Job 1754: Subtask load_tmdb_genres
+[2026-05-07T08:09:55.073+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host 304727ced316
+[2026-05-07T08:09:55.557+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T08:09:55.608+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:09:55.813+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T08:09:55.845+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-07T08:09:55.854+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-07T08:09:55.861+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-07T08:09:56.745+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T08:09:57.270+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:09:57.473+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:09:57.648+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:09:57.940+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:10:03.296+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:10:03.312+0000] {connection.py:788} INFO - closed
+[2026-05-07T08:10:03.479+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-07T08:10:03.759+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:10:03.852+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:10:03.853+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T080953, end_date=20260507T081003
+[2026-05-07T08:10:04.011+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:10:04.180+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:10:04.185+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:21:41.714+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:21:41.727+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:21:41.733+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:21:41.733+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:21:41.744+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T08:21:41.753+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=669) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:21:41.755+0000] {standard_task_runner.py:72} INFO - Started process 693 to run task
+[2026-05-07T08:21:41.760+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'load_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1848', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp6_hkqfeg']
+[2026-05-07T08:21:41.769+0000] {standard_task_runner.py:105} INFO - Job 1848: Subtask load_tmdb_genres
+[2026-05-07T08:21:41.844+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.load_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host 468e1946259b
+[2026-05-07T08:21:41.932+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='load_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T08:21:41.936+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:21:41.986+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T08:21:41.989+0000] {connection.py:413} INFO - Snowflake Connector for Python Version: 3.12.2, Python Version: 3.12.5, Platform: Linux-6.12.76-linuxkit-aarch64-with-glibc2.36
+[2026-05-07T08:21:41.994+0000] {connection.py:1196} INFO - Connecting to GLOBAL Snowflake domain
+[2026-05-07T08:21:41.997+0000] {connection.py:1277} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-05-07T08:21:42.348+0000] {base.py:84} INFO - Retrieving connection 'conn'
+[2026-05-07T08:21:42.541+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:21:42.655+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:21:42.765+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:21:43.043+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:21:46.353+0000] {cursor.py:1156} INFO - Number of results in first chunk: 1
+[2026-05-07T08:21:46.356+0000] {connection.py:788} INFO - closed
+[2026-05-07T08:21:46.423+0000] {connection.py:794} INFO - No async queries seem to be running, deleting session
+[2026-05-07T08:21:46.607+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:21:46.680+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:21:46.682+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=load_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T082141, end_date=20260507T082146
+[2026-05-07T08:21:46.779+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:21:46.886+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:21:46.899+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

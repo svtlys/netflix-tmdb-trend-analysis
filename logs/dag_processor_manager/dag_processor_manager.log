@@ -3221,3 +3221,1733 @@ File Path                             PID  Runtime      # DAGs    # Errors  Last
 /opt/airflow/dags/tmdb_pipeline.py    429  0.03s             1           0  0.09s           2026-05-04T23:37:38                      12
 /opt/airflow/dags/test_dag.py         432  0.01s             1           0  0.08s           2026-05-04T23:37:38                      12
 ================================================================================
+[2026-05-05T16:52:35.401+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-05T16:52:35.405+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-05T16:52:35.405+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-05T16:52:35.405+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-05T16:52:35.408+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-05T16:53:15.269+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-05T16:53:15.269+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-05T16:53:15.269+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-05T16:53:15.269+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-05T16:53:15.271+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-05T16:53:16.354+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         276  0.01s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    273  0.02s             0           0                                                   0
+================================================================================
+[2026-05-05T16:53:46.738+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    310  0.02s             1           0  0.09s           2026-05-05T16:53:16                      12
+/opt/airflow/dags/test_dag.py         312  0.00s             1           0  0.08s           2026-05-05T16:53:16                      12
+================================================================================
+[2026-05-05T16:54:17.190+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    326  0.02s             1           0  0.10s           2026-05-05T16:53:46                      12
+/opt/airflow/dags/test_dag.py         329  0.01s             1           0  0.09s           2026-05-05T16:53:46                      12
+================================================================================
+[2026-05-05T16:54:47.540+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    342  0.02s             1           0  0.08s           2026-05-05T16:54:17                      12
+/opt/airflow/dags/test_dag.py         345  0.00s             1           0  0.07s           2026-05-05T16:54:17                      12
+================================================================================
+[2026-05-05T16:55:17.928+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    358  0.02s             1           0  0.09s           2026-05-05T16:54:47                      12
+/opt/airflow/dags/test_dag.py         361  0.01s             1           0  0.07s           2026-05-05T16:54:47                      12
+================================================================================
+[2026-05-05T16:55:48.346+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    374  0.02s             1           0  0.08s           2026-05-05T16:55:17                      12
+/opt/airflow/dags/test_dag.py         377  0.00s             1           0  0.07s           2026-05-05T16:55:17                      12
+================================================================================
+[2026-05-05T16:56:18.773+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    391  0.02s             1           0  0.08s           2026-05-05T16:55:48                      12
+/opt/airflow/dags/test_dag.py         394  0.00s             1           0  0.07s           2026-05-05T16:55:48                      12
+================================================================================
+[2026-05-05T16:56:49.127+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    407  0.01s             1           0  0.09s           2026-05-05T16:56:18                      12
+/opt/airflow/dags/test_dag.py         410  0.00s             1           0  0.08s           2026-05-05T16:56:18                      12
+================================================================================
+[2026-05-05T16:57:19.528+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    423  0.02s             1           0  0.08s           2026-05-05T16:56:49                      12
+/opt/airflow/dags/test_dag.py         426  0.00s             1           0  0.07s           2026-05-05T16:56:49                      12
+================================================================================
+[2026-05-05T16:57:49.919+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    439  0.01s             1           0  0.08s           2026-05-05T16:57:19                      12
+/opt/airflow/dags/test_dag.py         442  0.00s             1           0  0.07s           2026-05-05T16:57:19                      12
+================================================================================
+[2026-05-05T16:58:15.353+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-05T16:58:15.360+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-05T16:58:20.429+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py         470  0.00s             1           0  0.05s           2026-05-05T16:57:49                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.05s           2026-05-05T16:58:18                      12
+================================================================================
+[2026-05-05T16:59:02.073+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-05T16:59:02.079+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-05T16:59:02.079+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-05T16:59:02.079+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-05T16:59:02.081+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-05T16:59:02.916+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         270  0.01s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    267  0.01s             0           0                                                   0
+================================================================================
+[2026-05-05T16:59:33.231+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-05T16:59:25                      12
+/opt/airflow/dags/test_dag.py         330  0.01s             1           0  0.07s           2026-05-05T16:59:02                      12
+================================================================================
+[2026-05-05T17:00:03.655+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py         390  0.00s             1           0  0.07s           2026-05-05T16:59:33                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.06s           2026-05-05T16:59:51                      11
+================================================================================
+[2026-05-05T17:00:33.974+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-05T17:00:21                      12
+/opt/airflow/dags/test_dag.py         411  0.02s             1           0  0.06s           2026-05-05T17:00:03                      12
+================================================================================
+[2026-05-05T17:01:04.319+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py         427  0.00s             1           0  0.08s           2026-05-05T17:00:34                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.07s           2026-05-05T17:00:52                      12
+================================================================================
+[2026-05-07T07:11:03.489+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T07:11:03.496+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T07:11:03.496+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T07:11:03.498+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:11:03.507+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:17:30.125+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T07:17:30.133+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T07:17:30.133+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T07:17:30.133+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:17:30.136+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:17:31.514+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         294  0.02s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    291  0.03s             0           0                                                   0
+================================================================================
+[2026-05-07T07:18:01.839+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    327  0.02s             1           0  0.13s           2026-05-07T07:17:31                      12
+/opt/airflow/dags/test_dag.py         330  0.01s             1           0  0.12s           2026-05-07T07:17:31                      12
+================================================================================
+[2026-05-07T07:18:33.096+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    497  0.20s             1           0  0.14s           2026-05-07T07:18:01                      33
+/opt/airflow/dags/test_dag.py         502  0.01s             1           0  0.09s           2026-05-07T07:18:01                      12
+================================================================================
+[2026-05-07T07:19:03.238+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.73s           2026-05-07T07:18:33                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.58s           2026-05-07T07:18:33                      12
+================================================================================
+[2026-05-07T07:19:33.808+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.29s           2026-05-07T07:19:04                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.26s           2026-05-07T07:19:04                      12
+================================================================================
+[2026-05-07T07:20:04.182+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T07:19:34                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.10s           2026-05-07T07:19:34                      12
+================================================================================
+[2026-05-07T07:20:34.480+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.56s           2026-05-07T07:20:05                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.43s           2026-05-07T07:20:05                      12
+================================================================================
+[2026-05-07T07:21:04.997+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.87s           2026-05-07T07:20:37                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.82s           2026-05-07T07:20:37                      12
+================================================================================
+[2026-05-07T07:21:35.977+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.25s           2026-05-07T07:21:08                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.21s           2026-05-07T07:21:08                      12
+================================================================================
+[2026-05-07T07:22:06.372+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.18s           2026-05-07T07:21:39                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.15s           2026-05-07T07:21:39                      12
+================================================================================
+[2026-05-07T07:22:30.648+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:22:30.661+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:22:36.761+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.23s           2026-05-07T07:22:09                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.22s           2026-05-07T07:22:09                      12
+================================================================================
+[2026-05-07T07:23:07.208+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.10s           2026-05-07T07:22:39                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:22:39                      12
+================================================================================
+[2026-05-07T07:23:37.610+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:23:10                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.11s           2026-05-07T07:23:10                      12
+================================================================================
+[2026-05-07T07:24:08.071+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.15s           2026-05-07T07:23:40                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.14s           2026-05-07T07:23:40                      12
+================================================================================
+[2026-05-07T07:24:38.429+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.13s           2026-05-07T07:24:11                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.12s           2026-05-07T07:24:11                      12
+================================================================================
+[2026-05-07T07:25:08.852+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:24:41                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:24:41                      12
+================================================================================
+[2026-05-07T07:25:39.229+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:25:11                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:25:11                      12
+================================================================================
+[2026-05-07T07:26:09.639+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:25:42                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.06s           2026-05-07T07:25:42                      12
+================================================================================
+[2026-05-07T07:26:40.066+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:26:12                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:26:12                      12
+================================================================================
+[2026-05-07T07:27:10.372+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:26:43                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.12s           2026-05-07T07:26:43                      12
+================================================================================
+[2026-05-07T07:27:30.701+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:27:30.711+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:27:40.836+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.10s           2026-05-07T07:27:13                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:27:13                      12
+================================================================================
+[2026-05-07T07:28:11.273+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:27:44                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.10s           2026-05-07T07:27:44                      12
+================================================================================
+[2026-05-07T07:28:41.657+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:28:14                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:28:14                      12
+================================================================================
+[2026-05-07T07:29:12.116+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:28:44                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:28:44                      12
+================================================================================
+[2026-05-07T07:29:42.531+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:29:15                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:29:15                      12
+================================================================================
+[2026-05-07T07:30:12.942+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.07s           2026-05-07T07:29:45                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:29:45                      12
+================================================================================
+[2026-05-07T07:30:43.318+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.10s           2026-05-07T07:30:16                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:30:16                      12
+================================================================================
+[2026-05-07T07:32:21.214+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T07:32:21.220+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T07:32:21.220+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T07:32:21.220+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:32:21.223+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:32:22.229+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         281  0.02s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    278  0.03s             0           0                                                   0
+================================================================================
+[2026-05-07T07:32:52.628+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    305  0.03s             1           0  0.10s           2026-05-07T07:32:22                      12
+/opt/airflow/dags/test_dag.py         308  0.01s             1           0  0.10s           2026-05-07T07:32:22                      12
+================================================================================
+[2026-05-07T07:33:23.052+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    322  0.02s             1           0  0.11s           2026-05-07T07:32:52                      12
+/opt/airflow/dags/test_dag.py         325  0.01s             1           0  0.09s           2026-05-07T07:32:52                      12
+================================================================================
+[2026-05-07T07:33:54.010+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1007  0.04s             1           0  0.11s           2026-05-07T07:33:23                      33
+/opt/airflow/dags/test_dag.py        1011  0.01s             1           0  0.07s           2026-05-07T07:33:23                      12
+================================================================================
+[2026-05-07T07:34:24.287+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.40s           2026-05-07T07:33:54                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.37s           2026-05-07T07:33:54                      12
+================================================================================
+[2026-05-07T07:34:54.930+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   2066  0.01s             1           0  0.09s           2026-05-07T07:34:24                      12
+/opt/airflow/dags/test_dag.py        2069  0.00s             1           0  0.08s           2026-05-07T07:34:24                      12
+================================================================================
+[2026-05-07T07:35:25.451+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   2260  0.07s             1           0  0.13s           2026-05-07T07:34:55                      12
+/opt/airflow/dags/test_dag.py        2263  0.01s             1           0  0.12s           2026-05-07T07:34:55                      12
+================================================================================
+[2026-05-07T07:35:55.686+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.63s           2026-05-07T07:35:26                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.59s           2026-05-07T07:35:26                      12
+================================================================================
+[2026-05-07T07:36:26.149+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.16s           2026-05-07T07:35:56                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.15s           2026-05-07T07:35:56                      12
+================================================================================
+[2026-05-07T07:36:56.513+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:36:27                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:36:27                      12
+================================================================================
+[2026-05-07T07:37:21.816+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:37:21.826+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:37:26.883+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.06s           2026-05-07T07:36:57                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.06s           2026-05-07T07:36:57                      12
+================================================================================
+[2026-05-07T07:37:57.357+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:37:28                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:37:28                      12
+================================================================================
+[2026-05-07T07:38:27.764+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.23s           2026-05-07T07:37:58                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.19s           2026-05-07T07:37:58                      12
+================================================================================
+[2026-05-07T07:38:58.166+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.17s           2026-05-07T07:38:28                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.15s           2026-05-07T07:38:28                      12
+================================================================================
+[2026-05-07T07:39:28.518+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T07:38:59                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.10s           2026-05-07T07:38:59                      12
+================================================================================
+[2026-05-07T07:39:58.939+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.16s           2026-05-07T07:39:29                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.14s           2026-05-07T07:39:29                      12
+================================================================================
+[2026-05-07T07:40:29.376+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.17s           2026-05-07T07:40:00                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.14s           2026-05-07T07:40:00                      12
+================================================================================
+[2026-05-07T07:40:59.807+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.15s           2026-05-07T07:40:45                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:40:30                      12
+================================================================================
+[2026-05-07T07:41:30.244+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.18s           2026-05-07T07:41:01                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:41:16                      12
+================================================================================
+[2026-05-07T07:42:01.155+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:41:46                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:41:31                      12
+================================================================================
+[2026-05-07T07:42:21.849+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:42:21.854+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:42:31.189+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.45s           2026-05-07T07:42:17                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.19s           2026-05-07T07:42:02                      12
+================================================================================
+[2026-05-07T07:43:01.651+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.29s           2026-05-07T07:42:47                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.18s           2026-05-07T07:42:33                      12
+================================================================================
+[2026-05-07T07:43:32.053+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.35s           2026-05-07T07:43:18                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.13s           2026-05-07T07:43:03                      12
+================================================================================
+[2026-05-07T07:44:02.643+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.54s           2026-05-07T07:43:49                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.11s           2026-05-07T07:43:34                      12
+================================================================================
+[2026-05-07T07:44:33.461+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.20s           2026-05-07T07:44:04                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.10s           2026-05-07T07:44:20                      12
+================================================================================
+[2026-05-07T07:45:04.197+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.21s           2026-05-07T07:44:35                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:44:51                      12
+================================================================================
+[2026-05-07T07:45:34.918+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.32s           2026-05-07T07:45:06                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.23s           2026-05-07T07:45:21                      12
+================================================================================
+[2026-05-07T07:46:05.313+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.15s           2026-05-07T07:45:37                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T07:45:52                      12
+================================================================================
+[2026-05-07T07:46:35.775+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.17s           2026-05-07T07:46:07                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:46:22                      12
+================================================================================
+[2026-05-07T07:47:06.131+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.13s           2026-05-07T07:46:37                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:46:53                      12
+================================================================================
+[2026-05-07T07:47:22.349+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:47:22.357+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:47:36.550+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:47:08                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.07s           2026-05-07T07:47:23                      12
+================================================================================
+[2026-05-07T07:48:06.908+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:47:38                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:47:53                      12
+================================================================================
+[2026-05-07T07:48:37.313+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T07:48:24                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.10s           2026-05-07T07:48:09                      12
+================================================================================
+[2026-05-07T07:49:07.725+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T07:48:54                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:48:39                      12
+================================================================================
+[2026-05-07T07:49:38.230+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.27s           2026-05-07T07:49:25                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.14s           2026-05-07T07:49:09                      12
+================================================================================
+[2026-05-07T07:50:08.599+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.16s           2026-05-07T07:49:40                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T07:49:55                      12
+================================================================================
+[2026-05-07T07:50:39.003+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:50:10                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:50:25                      12
+================================================================================
+[2026-05-07T07:51:09.413+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.11s           2026-05-07T07:50:41                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:50:56                      12
+================================================================================
+[2026-05-07T07:51:39.827+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.12s           2026-05-07T07:51:11                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.07s           2026-05-07T07:51:26                      12
+================================================================================
+[2026-05-07T07:52:10.186+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:51:57                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:51:41                      12
+================================================================================
+[2026-05-07T07:52:22.361+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:52:22.371+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:52:40.591+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.09s           2026-05-07T07:52:27                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:52:12                      12
+================================================================================
+[2026-05-07T07:53:11.001+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:52:42                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.07s           2026-05-07T07:52:57                      12
+================================================================================
+[2026-05-07T07:53:41.403+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.10s           2026-05-07T07:53:28                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.07s           2026-05-07T07:53:13                      12
+================================================================================
+[2026-05-07T07:54:11.786+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:53:43                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T07:53:58                      12
+================================================================================
+[2026-05-07T07:54:42.175+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T07:54:29                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.08s           2026-05-07T07:54:13                      12
+================================================================================
+[2026-05-07T07:55:12.947+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.14s           2026-05-07T07:54:59                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.09s           2026-05-07T07:54:44                      12
+================================================================================
+[2026-05-07T07:55:43.505+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.60s           2026-05-07T07:55:15                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.57s           2026-05-07T07:55:30                      12
+================================================================================
+[2026-05-07T07:56:44.086+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T07:56:44.090+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T07:56:44.091+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T07:56:44.092+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T07:56:44.102+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T07:56:46.226+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         303  0.06s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    300  0.08s             0           0                                                   0
+================================================================================
+[2026-05-07T07:57:17.388+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    902  0.10s             1           0  0.26s           2026-05-07T07:56:46                      12
+/opt/airflow/dags/test_dag.py         905  0.02s             1           0  0.25s           2026-05-07T07:56:46                      12
+================================================================================
+[2026-05-07T07:57:48.361+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1261  0.03s             1           0  0.98s           2026-05-07T07:57:18                      12
+/opt/airflow/dags/test_dag.py        1262  0.01s             1           0  0.88s           2026-05-07T07:57:18                      12
+================================================================================
+[2026-05-07T07:58:19.323+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py        1854  0.00s             1           0  0.48s           2026-05-07T07:57:48                      12
+/opt/airflow/dags/tmdb_pipeline.py   1851  0.03s             1           0  0.45s           2026-05-07T07:57:48                      12
+================================================================================
+[2026-05-07T07:58:49.781+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   2027  0.01s             1           0  0.19s           2026-05-07T07:58:19                      12
+/opt/airflow/dags/test_dag.py        2030  0.01s             1           0  0.16s           2026-05-07T07:58:19                      12
+================================================================================
+[2026-05-07T07:59:20.524+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   2674  0.02s             1           0  0.15s           2026-05-07T07:58:49                      12
+/opt/airflow/dags/test_dag.py        2676  0.00s             1           0  0.14s           2026-05-07T07:58:49                      12
+================================================================================
+[2026-05-07T07:59:50.768+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py                                1           0  0.48s           2026-05-07T07:59:21                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.48s           2026-05-07T07:59:20                      12
+================================================================================
+[2026-05-07T08:00:21.451+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.23s           2026-05-07T07:59:52                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.22s           2026-05-07T07:59:52                      12
+================================================================================
+[2026-05-07T08:00:51.818+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.19s           2026-05-07T08:00:22                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.18s           2026-05-07T08:00:22                      12
+================================================================================
+[2026-05-07T08:01:22.138+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.14s           2026-05-07T08:00:52                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.13s           2026-05-07T08:00:52                      12
+================================================================================
+[2026-05-07T08:01:44.581+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:01:44.593+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:01:52.692+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.19s           2026-05-07T08:01:23                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.17s           2026-05-07T08:01:23                      12
+================================================================================
+[2026-05-07T08:02:23.218+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.19s           2026-05-07T08:01:53                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.16s           2026-05-07T08:01:53                      12
+================================================================================
+[2026-05-07T08:02:53.609+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.13s           2026-05-07T08:02:24                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.12s           2026-05-07T08:02:24                      12
+================================================================================
+[2026-05-07T08:03:24.052+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T08:02:54                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.11s           2026-05-07T08:02:54                      12
+================================================================================
+[2026-05-07T08:03:54.494+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.11s           2026-05-07T08:03:25                      12
+/opt/airflow/dags/test_dag.py                                1           0  0.10s           2026-05-07T08:03:25                      12
+================================================================================
+[2026-05-07T08:08:35.687+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T08:08:35.693+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T08:08:35.693+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T08:08:35.693+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:08:35.696+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:08:36.735+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         275  0.01s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    272  0.02s             0           0                                                   0
+================================================================================
+[2026-05-07T08:09:07.158+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    300  0.02s             1           0  0.12s           2026-05-07T08:08:36                      34
+/opt/airflow/dags/test_dag.py         303  0.01s             1           0  0.08s           2026-05-07T08:08:36                      12
+================================================================================
+[2026-05-07T08:09:37.494+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    374  0.02s             1           0  0.11s           2026-05-07T08:09:07                      12
+/opt/airflow/dags/test_dag.py         377  0.01s             1           0  0.10s           2026-05-07T08:09:07                      12
+================================================================================
+[2026-05-07T08:10:07.764+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    901  0.08s             1           0  0.11s           2026-05-07T08:09:37                      12
+/opt/airflow/dags/test_dag.py         902  0.03s             1           0  0.10s           2026-05-07T08:09:37                      12
+================================================================================
+[2026-05-07T08:10:38.586+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1194  0.02s             1           0  0.53s           2026-05-07T08:10:08                      12
+/opt/airflow/dags/test_dag.py        1197  0.00s             1           0  0.46s           2026-05-07T08:10:08                      12
+================================================================================
+[2026-05-07T08:11:08.956+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1238  0.02s             1           0  0.20s           2026-05-07T08:10:38                      12
+/opt/airflow/dags/test_dag.py        1241  0.01s             1           0  0.18s           2026-05-07T08:10:38                      12
+================================================================================
+[2026-05-07T08:11:39.346+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1254  0.01s             1           0  0.16s           2026-05-07T08:11:09                      12
+/opt/airflow/dags/test_dag.py        1257  0.00s             1           0  0.15s           2026-05-07T08:11:09                      12
+================================================================================
+[2026-05-07T08:12:09.805+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1270  0.02s             1           0  0.09s           2026-05-07T08:11:39                      12
+/opt/airflow/dags/test_dag.py        1273  0.00s             1           0  0.08s           2026-05-07T08:11:39                      12
+================================================================================
+[2026-05-07T08:20:25.842+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T08:20:25.849+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T08:20:25.849+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T08:20:25.850+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:20:25.855+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:20:26.898+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         270  0.02s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    267  0.02s             0           0                                                   0
+================================================================================
+[2026-05-07T08:20:57.295+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    299  0.02s             1           0  0.09s           2026-05-07T08:20:26                      12
+/opt/airflow/dags/test_dag.py         302  0.01s             1           0  0.08s           2026-05-07T08:20:26                      12
+================================================================================
+[2026-05-07T08:21:27.594+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    358  0.01s             1           0  0.13s           2026-05-07T08:20:57                      12
+/opt/airflow/dags/test_dag.py         361  0.00s             1           0  0.11s           2026-05-07T08:20:57                      12
+================================================================================
+[2026-05-07T08:21:58.343+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1115  0.03s             1           0  0.07s           2026-05-07T08:21:27                      12
+/opt/airflow/dags/test_dag.py        1117  0.00s             1           0  0.07s           2026-05-07T08:21:27                      12
+================================================================================
+[2026-05-07T08:22:28.843+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1306  0.01s             1           0  0.13s           2026-05-07T08:21:58                      12
+/opt/airflow/dags/test_dag.py        1309  0.01s             1           0  0.10s           2026-05-07T08:21:58                      12
+================================================================================
+[2026-05-07T08:22:59.080+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1418  0.01s             1           0  0.13s           2026-05-07T08:22:28                      12
+/opt/airflow/dags/test_dag.py        1421  0.00s             1           0  0.12s           2026-05-07T08:22:28                      12
+================================================================================
+[2026-05-07T08:23:29.552+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1434  0.02s             1           0  0.10s           2026-05-07T08:22:59                      12
+/opt/airflow/dags/test_dag.py        1437  0.01s             1           0  0.09s           2026-05-07T08:22:59                      12
+================================================================================
+[2026-05-07T08:23:59.941+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1450  0.02s             1           0  0.25s           2026-05-07T08:23:29                      12
+/opt/airflow/dags/test_dag.py        1453  0.01s             1           0  0.23s           2026-05-07T08:23:29                      12
+================================================================================
+[2026-05-07T08:24:30.376+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1465  0.02s             1           0  0.12s           2026-05-07T08:24:00                      12
+/opt/airflow/dags/test_dag.py        1468  0.00s             1           0  0.10s           2026-05-07T08:24:00                      12
+================================================================================
+[2026-05-07T08:25:00.742+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1481  0.02s             1           0  0.11s           2026-05-07T08:24:30                      12
+/opt/airflow/dags/test_dag.py        1484  0.01s             1           0  0.09s           2026-05-07T08:24:30                      12
+================================================================================
+[2026-05-07T08:25:26.131+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:25:26.144+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:25:31.242+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1497  0.02s             1           0  0.13s           2026-05-07T08:25:00                      12
+/opt/airflow/dags/test_dag.py        1500  0.00s             1           0  0.12s           2026-05-07T08:25:00                      12
+================================================================================
+[2026-05-07T08:26:01.604+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1513  0.01s             1           0  0.12s           2026-05-07T08:25:31                      12
+/opt/airflow/dags/test_dag.py        1516  0.00s             1           0  0.11s           2026-05-07T08:25:31                      12
+================================================================================
+[2026-05-07T08:26:32.075+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1529  0.01s             1           0  0.11s           2026-05-07T08:26:01                      12
+/opt/airflow/dags/test_dag.py        1532  0.00s             1           0  0.10s           2026-05-07T08:26:01                      12
+================================================================================
+[2026-05-07T08:27:02.430+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1545  0.02s             1           0  0.10s           2026-05-07T08:26:32                      12
+/opt/airflow/dags/test_dag.py        1548  0.01s             1           0  0.09s           2026-05-07T08:26:32                      12
+================================================================================
+[2026-05-07T08:27:32.876+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1561  0.02s             1           0  0.10s           2026-05-07T08:27:02                      12
+/opt/airflow/dags/test_dag.py        1564  0.00s             1           0  0.09s           2026-05-07T08:27:02                      12
+================================================================================
+[2026-05-07T08:28:03.264+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1577  0.02s             1           0  0.10s           2026-05-07T08:27:32                      12
+/opt/airflow/dags/test_dag.py        1580  0.01s             1           0  0.08s           2026-05-07T08:27:32                      12
+================================================================================
+[2026-05-07T08:28:33.714+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1593  0.06s             1           0  0.10s           2026-05-07T08:28:03                      12
+/opt/airflow/dags/test_dag.py        1596  0.01s             1           0  0.09s           2026-05-07T08:28:03                      12
+================================================================================
+[2026-05-07T08:29:04.117+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1615  0.02s             1           0  0.21s           2026-05-07T08:28:33                      12
+/opt/airflow/dags/test_dag.py        1618  0.00s             1           0  0.16s           2026-05-07T08:28:33                      12
+================================================================================
+[2026-05-07T08:29:34.591+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1631  0.02s             1           0  0.12s           2026-05-07T08:29:04                      12
+/opt/airflow/dags/test_dag.py        1634  0.00s             1           0  0.09s           2026-05-07T08:29:04                      12
+================================================================================
+[2026-05-07T08:30:05.050+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1647  0.02s             1           0  0.10s           2026-05-07T08:29:34                      12
+/opt/airflow/dags/test_dag.py        1650  0.01s             1           0  0.08s           2026-05-07T08:29:34                      12
+================================================================================
+[2026-05-07T08:30:26.302+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:30:26.309+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:30:35.462+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1663  0.02s             1           0  0.12s           2026-05-07T08:30:05                      12
+/opt/airflow/dags/test_dag.py        1666  0.01s             1           0  0.11s           2026-05-07T08:30:05                      12
+================================================================================
+[2026-05-07T08:31:05.856+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1679  0.03s             1           0  0.11s           2026-05-07T08:30:35                      12
+/opt/airflow/dags/test_dag.py        1682  0.01s             1           0  0.09s           2026-05-07T08:30:35                      12
+================================================================================
+[2026-05-07T08:31:36.332+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1695  0.02s             1           0  0.23s           2026-05-07T08:31:06                      34
+/opt/airflow/dags/test_dag.py        1698  0.01s             1           0  0.16s           2026-05-07T08:31:06                      12
+================================================================================
+[2026-05-07T08:32:49.863+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T08:32:49.872+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T08:32:49.872+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T08:32:49.872+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:32:49.877+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:32:50.856+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         271  0.02s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    268  0.02s             0           0                                                   0
+================================================================================
+[2026-05-07T08:33:21.120+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    355  0.02s             1           0  0.10s           2026-05-07T08:32:50                      12
+/opt/airflow/dags/test_dag.py         358  0.01s             1           0  0.10s           2026-05-07T08:32:50                      12
+================================================================================
+[2026-05-07T08:33:51.415+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    376  0.02s             1           0  0.09s           2026-05-07T08:33:21                      12
+/opt/airflow/dags/test_dag.py         379  0.01s             1           0  0.08s           2026-05-07T08:33:21                      12
+================================================================================
+[2026-05-07T08:34:21.740+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    392  0.01s             1           0  0.11s           2026-05-07T08:33:51                      12
+/opt/airflow/dags/test_dag.py         395  0.00s             1           0  0.10s           2026-05-07T08:33:51                      12
+================================================================================
+[2026-05-07T08:34:52.087+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    408  0.02s             1           0  0.10s           2026-05-07T08:34:21                      12
+/opt/airflow/dags/test_dag.py         411  0.00s             1           0  0.09s           2026-05-07T08:34:21                      12
+================================================================================
+[2026-05-07T08:35:22.560+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    424  0.02s             1           0  0.09s           2026-05-07T08:34:52                      12
+/opt/airflow/dags/test_dag.py         427  0.01s             1           0  0.08s           2026-05-07T08:34:52                      12
+================================================================================
+[2026-05-07T08:35:52.904+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    440  0.01s             1           0  0.12s           2026-05-07T08:35:22                      12
+/opt/airflow/dags/test_dag.py         443  0.01s             1           0  0.10s           2026-05-07T08:35:22                      12
+================================================================================
+[2026-05-07T08:36:23.358+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    456  0.02s             1           0  0.09s           2026-05-07T08:35:52                      12
+/opt/airflow/dags/test_dag.py         459  0.01s             1           0  0.08s           2026-05-07T08:35:52                      12
+================================================================================
+[2026-05-07T08:36:53.747+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    472  0.01s             1           0  0.15s           2026-05-07T08:36:23                      12
+/opt/airflow/dags/test_dag.py         475  0.00s             1           0  0.13s           2026-05-07T08:36:23                      12
+================================================================================
+[2026-05-07T08:37:24.179+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.15s           2026-05-07T08:37:08                      12
+/opt/airflow/dags/test_dag.py         541  0.01s             1           0  0.10s           2026-05-07T08:36:53                      12
+================================================================================
+[2026-05-07T08:37:50.466+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:37:50.477+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:37:54.549+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.12s           2026-05-07T08:37:38                      12
+/opt/airflow/dags/test_dag.py         567  0.01s             1           0  0.08s           2026-05-07T08:37:24                      12
+================================================================================
+[2026-05-07T08:38:24.893+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py         583  0.01s             1           0  0.08s           2026-05-07T08:37:54                      12
+/opt/airflow/dags/tmdb_pipeline.py                           1           0  0.08s           2026-05-07T08:38:08                      12
+================================================================================
+[2026-05-07T08:39:41.143+0000] {manager.py:486} INFO - Processing files using up to 2 processes at a time 
+[2026-05-07T08:39:41.145+0000] {manager.py:487} INFO - Process each file at most once every 30 seconds
+[2026-05-07T08:39:41.145+0000] {manager.py:488} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-05-07T08:39:41.146+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:39:41.150+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:39:42.050+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/test_dag.py         269  0.01s             0           0                                                   0
+/opt/airflow/dags/tmdb_pipeline.py    267  0.01s             0           0                                                   0
+================================================================================
+[2026-05-07T08:40:12.448+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    393  0.02s             1           0  0.15s           2026-05-07T08:39:42                      12
+/opt/airflow/dags/test_dag.py         395  0.01s             1           0  0.15s           2026-05-07T08:39:42                      12
+================================================================================
+[2026-05-07T08:40:42.752+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    433  0.01s             1           0  0.12s           2026-05-07T08:40:12                      12
+/opt/airflow/dags/test_dag.py         436  0.01s             1           0  0.11s           2026-05-07T08:40:12                      12
+================================================================================
+[2026-05-07T08:41:13.076+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    449  0.02s             1           0  0.10s           2026-05-07T08:40:42                      12
+/opt/airflow/dags/test_dag.py         452  0.01s             1           0  0.09s           2026-05-07T08:40:42                      12
+================================================================================
+[2026-05-07T08:41:43.420+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    465  0.01s             1           0  0.09s           2026-05-07T08:41:13                      12
+/opt/airflow/dags/test_dag.py         468  0.00s             1           0  0.08s           2026-05-07T08:41:13                      12
+================================================================================
+[2026-05-07T08:42:13.795+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    481  0.03s             1           0  0.12s           2026-05-07T08:41:43                      12
+/opt/airflow/dags/test_dag.py         484  0.00s             1           0  0.10s           2026-05-07T08:41:43                      12
+================================================================================
+[2026-05-07T08:42:44.349+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    497  0.03s             1           0  0.23s           2026-05-07T08:42:13                      12
+/opt/airflow/dags/test_dag.py         500  0.01s             1           0  0.20s           2026-05-07T08:42:13                      12
+================================================================================
+[2026-05-07T08:43:14.824+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    513  0.02s             1           0  0.13s           2026-05-07T08:42:44                      12
+/opt/airflow/dags/test_dag.py         516  0.00s             1           0  0.11s           2026-05-07T08:42:44                      12
+================================================================================
+[2026-05-07T08:43:45.198+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    528  0.03s             1           0  0.10s           2026-05-07T08:43:14                      12
+/opt/airflow/dags/test_dag.py         531  0.01s             1           0  0.09s           2026-05-07T08:43:14                      12
+================================================================================
+[2026-05-07T08:44:15.584+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    544  0.03s             1           0  0.14s           2026-05-07T08:43:45                      12
+/opt/airflow/dags/test_dag.py         547  0.01s             1           0  0.12s           2026-05-07T08:43:45                      12
+================================================================================
+[2026-05-07T08:44:41.847+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:44:41.858+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:44:45.933+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    613  0.02s             1           0  0.19s           2026-05-07T08:44:15                      12
+/opt/airflow/dags/test_dag.py         616  0.01s             1           0  0.16s           2026-05-07T08:44:15                      12
+================================================================================
+[2026-05-07T08:45:16.312+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    634  0.03s             1           0  0.12s           2026-05-07T08:44:46                      12
+/opt/airflow/dags/test_dag.py         637  0.01s             1           0  0.10s           2026-05-07T08:44:46                      12
+================================================================================
+[2026-05-07T08:45:46.633+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    650  0.02s             1           0  0.15s           2026-05-07T08:45:16                      12
+/opt/airflow/dags/test_dag.py         653  0.01s             1           0  0.13s           2026-05-07T08:45:16                      12
+================================================================================
+[2026-05-07T08:46:17.008+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    666  0.02s             1           0  0.09s           2026-05-07T08:45:46                      12
+/opt/airflow/dags/test_dag.py         669  0.00s             1           0  0.08s           2026-05-07T08:45:46                      12
+================================================================================
+[2026-05-07T08:46:47.381+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    682  0.03s             1           0  0.11s           2026-05-07T08:46:17                      12
+/opt/airflow/dags/test_dag.py         685  0.00s             1           0  0.10s           2026-05-07T08:46:17                      12
+================================================================================
+[2026-05-07T08:47:17.872+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_dag.py         702  0.01s             1           0  0.18s           2026-05-07T08:46:47                      33
+/opt/airflow/dags/tmdb_pipeline.py    699  0.02s             1           0  0.17s           2026-05-07T08:46:47                      12
+================================================================================
+[2026-05-07T08:47:48.283+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    715  0.02s             1           0  0.09s           2026-05-07T08:47:17                      12
+/opt/airflow/dags/test_dag.py         718  0.01s             1           0  0.08s           2026-05-07T08:47:17                      12
+================================================================================
+[2026-05-07T08:48:18.723+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    737  0.02s             1           0  0.09s           2026-05-07T08:47:48                      12
+/opt/airflow/dags/test_dag.py         740  0.01s             1           0  0.07s           2026-05-07T08:47:48                      12
+================================================================================
+[2026-05-07T08:48:49.127+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    753  0.03s             1           0  0.18s           2026-05-07T08:48:18                      12
+/opt/airflow/dags/test_dag.py         756  0.01s             1           0  0.16s           2026-05-07T08:48:18                      12
+================================================================================
+[2026-05-07T08:49:19.542+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    769  0.02s             1           0  0.10s           2026-05-07T08:48:49                      12
+/opt/airflow/dags/test_dag.py         772  0.01s             1           0  0.08s           2026-05-07T08:48:49                      12
+================================================================================
+[2026-05-07T08:49:41.851+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:49:41.865+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:49:49.993+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    785  0.02s             1           0  0.10s           2026-05-07T08:49:19                      12
+/opt/airflow/dags/test_dag.py         787  0.01s             1           0  0.09s           2026-05-07T08:49:19                      12
+================================================================================
+[2026-05-07T08:50:20.360+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    801  0.02s             1           0  0.13s           2026-05-07T08:49:50                      12
+/opt/airflow/dags/test_dag.py         804  0.01s             1           0  0.12s           2026-05-07T08:49:50                      12
+================================================================================
+[2026-05-07T08:50:50.802+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    817  0.02s             1           0  0.08s           2026-05-07T08:50:20                      12
+/opt/airflow/dags/test_dag.py         820  0.01s             1           0  0.08s           2026-05-07T08:50:20                      12
+================================================================================
+[2026-05-07T08:51:21.164+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    833  0.02s             1           0  0.13s           2026-05-07T08:50:50                      12
+/opt/airflow/dags/test_dag.py         836  0.00s             1           0  0.12s           2026-05-07T08:50:50                      12
+================================================================================
+[2026-05-07T08:51:51.519+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    849  0.02s             1           0  0.09s           2026-05-07T08:51:21                      12
+/opt/airflow/dags/test_dag.py         852  0.00s             1           0  0.08s           2026-05-07T08:51:21                      12
+================================================================================
+[2026-05-07T08:52:21.874+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    866  0.02s             1           0  0.09s           2026-05-07T08:51:51                      12
+/opt/airflow/dags/test_dag.py         869  0.00s             1           0  0.08s           2026-05-07T08:51:51                      12
+================================================================================
+[2026-05-07T08:52:52.381+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    882  0.04s             1           0  0.10s           2026-05-07T08:52:21                      12
+/opt/airflow/dags/test_dag.py         885  0.01s             1           0  0.08s           2026-05-07T08:52:21                      12
+================================================================================
+[2026-05-07T08:53:22.920+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    898  0.03s             1           0  0.20s           2026-05-07T08:52:52                      12
+/opt/airflow/dags/test_dag.py         901  0.01s             1           0  0.16s           2026-05-07T08:52:52                      12
+================================================================================
+[2026-05-07T08:53:53.317+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    914  0.03s             1           0  0.15s           2026-05-07T08:53:23                      12
+/opt/airflow/dags/test_dag.py         917  0.01s             1           0  0.12s           2026-05-07T08:53:23                      12
+================================================================================
+[2026-05-07T08:54:23.716+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    930  0.02s             1           0  0.17s           2026-05-07T08:53:53                      12
+/opt/airflow/dags/test_dag.py         933  0.01s             1           0  0.15s           2026-05-07T08:53:53                      12
+================================================================================
+[2026-05-07T08:54:42.017+0000] {manager.py:832} INFO - Searching for files in /opt/airflow/dags
+[2026-05-07T08:54:42.022+0000] {manager.py:835} INFO - There are 2 files in /opt/airflow/dags
+[2026-05-07T08:54:54.205+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    946  0.02s             1           0  0.12s           2026-05-07T08:54:23                      12
+/opt/airflow/dags/test_dag.py         949  0.01s             1           0  0.10s           2026-05-07T08:54:23                      12
+================================================================================
+[2026-05-07T08:55:24.614+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    962  0.03s             1           0  0.10s           2026-05-07T08:54:54                      12
+/opt/airflow/dags/test_dag.py         964  0.01s             1           0  0.08s           2026-05-07T08:54:54                      12
+================================================================================
+[2026-05-07T08:55:55.159+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    978  0.04s             1           0  0.18s           2026-05-07T08:55:24                      12
+/opt/airflow/dags/test_dag.py         981  0.01s             1           0  0.16s           2026-05-07T08:55:24                      12
+================================================================================
+[2026-05-07T08:56:25.527+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py    994  0.03s             1           0  0.17s           2026-05-07T08:55:55                      12
+/opt/airflow/dags/test_dag.py         997  0.01s             1           0  0.14s           2026-05-07T08:55:55                      12
+================================================================================
+[2026-05-07T08:56:56.016+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/tmdb_pipeline.py   1010  0.02s             1           0  0.16s           2026-05-07T08:56:25                      12
+/opt/airflow/dags/test_dag.py        1013  0.01s             1           0  0.14s           2026-05-07T08:56:25                      12
+================================================================================

@@ -16,3 +16,110 @@
 [2026-05-01T18:34:35.121+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
 [2026-05-01T18:34:35.131+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
 [2026-05-01T18:34:35.132+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:21:05.799+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:21:05.848+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:21:05.872+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:21:05.875+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:21:05.894+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T07:21:05.900+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2363) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:21:05.901+0000] {standard_task_runner.py:72} INFO - Started process 2430 to run task
+[2026-05-07T07:21:05.900+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '457', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp74i29nu1']
+[2026-05-07T07:21:05.907+0000] {standard_task_runner.py:105} INFO - Job 457: Subtask extract_tmdb_genres
+[2026-05-07T07:21:06.051+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host 1589e571b783
+[2026-05-07T07:21:06.137+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T07:21:06.156+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:21:06.379+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:21:06.399+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:21:06.401+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T072105, end_date=20260507T072106
+[2026-05-07T07:21:06.479+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:21:06.534+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T07:21:06.543+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:35:29.468+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:35:29.484+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:35:29.489+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:35:29.489+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:35:29.499+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T07:35:29.507+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2346) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:35:29.507+0000] {standard_task_runner.py:72} INFO - Started process 2400 to run task
+[2026-05-07T07:35:29.508+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '802', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpqum0dmyw']
+[2026-05-07T07:35:29.512+0000] {standard_task_runner.py:105} INFO - Job 802: Subtask extract_tmdb_genres
+[2026-05-07T07:35:29.555+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host da59d52ee0b5
+[2026-05-07T07:35:29.635+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T07:35:29.635+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:35:29.939+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:35:29.960+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:35:29.961+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T073529, end_date=20260507T073529
+[2026-05-07T07:35:30.022+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:35:30.040+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T07:44:42.273+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T07:44:42.294+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:44:42.301+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T07:44:42.302+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T07:44:42.313+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T07:44:42.350+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5481) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T07:44:42.339+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1140', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpw6cbasp7']
+[2026-05-07T07:44:42.354+0000] {standard_task_runner.py:105} INFO - Job 1140: Subtask extract_tmdb_genres
+[2026-05-07T07:44:42.352+0000] {standard_task_runner.py:72} INFO - Started process 5530 to run task
+[2026-05-07T07:44:42.454+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host da59d52ee0b5
+[2026-05-07T07:44:42.575+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T07:44:42.577+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T07:44:42.811+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T07:44:42.815+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T07:44:42.816+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T074442, end_date=20260507T074442
+[2026-05-07T07:44:42.833+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T07:44:42.847+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T07:44:42.848+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:00:06.898+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:00:06.934+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:00:06.947+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:00:06.948+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:00:06.975+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T08:00:06.996+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3121) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:00:07.002+0000] {standard_task_runner.py:72} INFO - Started process 3164 to run task
+[2026-05-07T08:00:07.003+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1638', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpqp82m8_2']
+[2026-05-07T08:00:07.018+0000] {standard_task_runner.py:105} INFO - Job 1638: Subtask extract_tmdb_genres
+[2026-05-07T08:00:07.165+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host aec0b0090a27
+[2026-05-07T08:00:07.357+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T08:00:07.361+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:00:07.627+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:00:07.669+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:00:07.671+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T080006, end_date=20260507T080007
+[2026-05-07T08:00:07.731+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:00:07.813+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:00:07.819+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:09:43.753+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:09:43.769+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:09:43.779+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:09:43.783+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:09:43.813+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T08:09:43.825+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=477) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:09:43.827+0000] {standard_task_runner.py:72} INFO - Started process 512 to run task
+[2026-05-07T08:09:43.829+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1726', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpekd4skv0']
+[2026-05-07T08:09:43.831+0000] {standard_task_runner.py:105} INFO - Job 1726: Subtask extract_tmdb_genres
+[2026-05-07T08:09:43.925+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host 304727ced316
+[2026-05-07T08:09:43.999+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T08:09:44.000+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:09:44.108+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:09:44.114+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:09:44.116+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T080943, end_date=20260507T080944
+[2026-05-07T08:09:44.140+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:09:44.158+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:09:44.161+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-05-07T08:21:33.268+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-07T08:21:33.286+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:21:33.296+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [queued]>
+[2026-05-07T08:21:33.296+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-05-07T08:21:33.309+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extract_tmdb_genres> on 2026-04-30 00:00:00+00:00
+[2026-05-07T08:21:33.318+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=473) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-07T08:21:33.319+0000] {standard_task_runner.py:72} INFO - Started process 509 to run task
+[2026-05-07T08:21:33.320+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'tmdb_realtime_ingest', 'extract_tmdb_genres', 'scheduled__2026-04-30T00:00:00+00:00', '--job-id', '1818', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpdi0vpb7x']
+[2026-05-07T08:21:33.322+0000] {standard_task_runner.py:105} INFO - Job 1818: Subtask extract_tmdb_genres
+[2026-05-07T08:21:33.360+0000] {task_command.py:467} INFO - Running <TaskInstance: tmdb_realtime_ingest.extract_tmdb_genres scheduled__2026-04-30T00:00:00+00:00 [running]> on host 468e1946259b
+[2026-05-07T08:21:33.425+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_realtime_ingest' AIRFLOW_CTX_TASK_ID='extract_tmdb_genres' AIRFLOW_CTX_EXECUTION_DATE='2026-04-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-30T00:00:00+00:00'
+[2026-05-07T08:21:33.426+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-07T08:21:33.542+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-07T08:21:33.549+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-07T08:21:33.549+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tmdb_realtime_ingest, task_id=extract_tmdb_genres, run_id=scheduled__2026-04-30T00:00:00+00:00, execution_date=20260430T000000, start_date=20260507T082133, end_date=20260507T082133
+[2026-05-07T08:21:33.585+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-07T08:21:33.605+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-07T08:21:33.606+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

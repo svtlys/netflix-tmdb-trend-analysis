@@ -259,9 +259,9 @@ def populate_final_dashboard_table():
         conn.close()
 with DAG(
     dag_id="tmdb_realtime_ingest",
-    start_date=datetime(2026, 3, 20),
+    start_date=datetime(2026, 4, 20),
     schedule_interval="@daily",   # simulate real-time
-    catchup=True
+    catchup=False
 ) as dag:
 
     extract_task = PythonOperator(

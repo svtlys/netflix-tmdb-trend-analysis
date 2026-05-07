@@ -8,7 +8,8 @@ with base as (
         rating,
         duration,
         listed_in,
-        country
+        country,
+        date_added
     from {{ ref('stg_netflix_titles') }}
 
 ),
@@ -22,6 +23,7 @@ flattened as (
         release_year,
         rating,
         duration,
+        date_added,
         trim(f.value::string) as genre_name,
         country
     from base,

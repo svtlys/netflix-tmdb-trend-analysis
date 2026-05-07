@@ -248,8 +248,7 @@ def populate_final_dashboard_table():
 
                 CURRENT_TIMESTAMP() AS LOADED_AT
             FROM DASHBOARD.KPIS_DAILY k
-            JOIN DASHBOARD.GENRE_GAP_ANALYSIS g
-                ON k.TOP_GENRE = g.GENRE_NAME
+CROSS JOIN DASHBOARD.GENRE_GAP_ANALYSIS g
         """)
 
         print("Created DASHBOARD.FINAL_DASHBOARD_SUMMARY")

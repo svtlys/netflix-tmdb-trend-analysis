@@ -1,7 +1,7 @@
 select
     show_id,
     title,
-
+    date_added,
     case
     when genre_name = 'Comedies' then 'Comedy'
     when genre_name = 'Dramas' then 'Drama'

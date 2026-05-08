@@ -79,6 +79,7 @@ Core business logic and insights:
 - `MART_GENRE_GAP_ANALYSIS`
 - `MART_KPIS_DAILY`
 
+###.env file is needed to run dbt
 ---
 
 ## Key Metrics
